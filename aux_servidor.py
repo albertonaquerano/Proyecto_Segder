@@ -1,3 +1,5 @@
+# SERVIDOR DE CONTENIDOS 
+
 import socket as s
 import os
 import json
@@ -5,12 +7,6 @@ import json
 IP = '127.0.0.1'
 PUERTO = 6767
 DIRECTORIO_CONTENIDOS = "contenidos"
-
-# Bloque de preparación (se mantiene igual)
-if not os.path.exists(DIRECTORIO_CONTENIDOS):
-    os.makedirs(DIRECTORIO_CONTENIDOS)
-    open(os.path.join(DIRECTORIO_CONTENIDOS, "video_promo.mp4"), 'w').close()
-    open(os.path.join(DIRECTORIO_CONTENIDOS, "imagen_miniatura.jpg"), 'w').close()
 
 s_servidor = s.socket(s.AF_INET, s.SOCK_STREAM)
 s_servidor.setsockopt(s.SOL_SOCKET, s.SO_REUSEADDR, 1)

@@ -1,3 +1,5 @@
+# APLICACION, cliente del servidor de contenidos
+
 import socket as s
 import json
 
@@ -44,3 +46,4 @@ else:
     print(respuesta)
 
 cliente.close()
+s.close()
