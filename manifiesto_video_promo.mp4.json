@@ -1,0 +1,7 @@
+{
+  "cifrado": true,
+  "modo_cifrado": "CTR-cenc",
+  "url_licencias": "127.0.0.1:6768",
+  "key_id": "KID_video_promo.mp4",
+  "iv": "5f619649692edf48fd4b0bf938e05671"
+}
